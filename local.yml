@@ -19,4 +19,5 @@
           - ttf-dejavu
           - xorg-server
           - xorg-xinit
+          - rofi 
 
