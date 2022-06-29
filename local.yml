@@ -19,5 +19,12 @@
           - ttf-dejavu
           - xorg-server
           - xorg-xinit
-          - rofi 
+          - rofi
+          - stow
+    - name: copy a file test
+      copy:
+        src: files/testfile.txt
+        dest: ~/diditwork.txt
+        owner: teclis
+        group: teclis
 
