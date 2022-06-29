@@ -7,7 +7,16 @@
     - name: install packages
       package:
         name: 
-          - htop
-          - tmux
-          - vim-nox 
+          - git
+          - firefox
+          - alacritty
+          - ranger
+          - zsh
+          - szhkd
+          - polybar
+          - nitrogen
+          - compton
+          - ttf-dejavu
+          - xorg-server
+          - xorg-xinit
 
