@@ -48,12 +48,16 @@
         repo: 'https://aur.archlinux.org/yay-git.git'
         dest: /opt/yay-git
         
-    - name: Stow a directory
+    - name: ensure yay does not have root perms
       ansible.builtin.shell: |
         sudo chown -R {{ username }}:{{ username }} ./yay-git
       args:
          chdir: "/opt"
 
-           
+    - name: ensure yay does not have root perms
+      ansible.builtin.shell: |
+        sudo makepkg -si
+      args:
+         chdir: "/opt/yay-git"
         
    
