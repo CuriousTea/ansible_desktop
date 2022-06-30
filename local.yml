@@ -43,7 +43,4 @@
       args:
         chdir: "/home/{{ username }}"
         
-    - name: change default shell 
-      ansible.builtin.shell: |
-        chsh -s /bin/zsh
-
+   
