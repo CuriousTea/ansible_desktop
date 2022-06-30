@@ -33,10 +33,8 @@
         
     - name: Stow a directory
       ansible.builtin.shell: |
-
         echo -e "stow x"
         stow x
-
-        args:
-           chdir: "~./dotfiles"
+       args:
+          chdir: "~./dotfiles"
 
