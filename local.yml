@@ -23,10 +23,9 @@
           - stow
           - neofetch
           - neovim
-         #    - name: copy a file test
-            #      copy:
-            #        src: files/testfile.txt
-#        dest: ~/diditwork.txt
-#        owner: teclis
-#        group: teclis
+
+    - name: Clone Dotfiles
+      ansible.builtin.git:
+        repo: 'https://github.com/CuriousTea/.dotfiles'
+        dest: /home/ {{ username }}/
 
