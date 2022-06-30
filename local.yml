@@ -55,6 +55,7 @@
          chdir: "/opt"
 
     - name: building yay
+      sudo: no
       ansible.builtin.shell: |
         makepkg -si
       args:
