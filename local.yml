@@ -5,7 +5,6 @@
 
   tasks:
     - name: install packages
-      hosts: localhost
       package:
         name: 
           - firefox
