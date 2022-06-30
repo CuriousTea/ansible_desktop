@@ -39,7 +39,7 @@
          
     - name: create a symbolic .zshrc
       ansible.builtin.shell: |
-        ln -s ~/.config/zsh/.zshrc /home/{{ username }}/.zshrc 
+        ln -s /home/{{ username }}/.config/zsh/.zshrc /home/{{ username }}/.zshrc 
       args:
         chdir: "/home/{{ username }}"
         
