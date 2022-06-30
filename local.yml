@@ -25,8 +25,20 @@
           - neofetch
           - neovim
 
+    - name: Create a .xinitrc file 
+      file: 
+        path: "/home/{{ username }}/.xinitrc"
+        state: touch
+
+    - name: Copy .xinitrc file
+      copy:
+        src: /etc/X11/xinit/xinitrc
+        dest: /home/{{ username }}/.xinitrc
+        owner: {{ username }}
+        group: {{ username }}
+
     - name: Clone Dotfiles
       ansible.builtin.git:
         repo: 'https://github.com/CuriousTea/.dotfiles'
-        dest: /home/ {{ username }}/
+        dest: /home/{{ username }}/
 
