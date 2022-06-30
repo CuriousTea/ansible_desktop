@@ -25,6 +25,7 @@
           - stow
           - neofetch
           - neovim
+          - ufw
 
     - name: Clone Dotfiles
       ansible.builtin.git:
