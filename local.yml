@@ -34,8 +34,8 @@
       copy:
         src: /etc/X11/xinit/xinitrc
         dest: ~/.xinitrc
-        owner: {{ username }}
-        group: {{ username }}
+        owner: "{{ username }}"
+        group: "{{ username }}"
 
     - name: Clone Dotfiles
       ansible.builtin.git:
