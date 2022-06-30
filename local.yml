@@ -33,7 +33,7 @@
     - name: Copy .xinitrc file
       copy:
         src: /etc/X11/xinit/xinitrc
-        dest: /home/"{{ username }}"/.xinitrc
+        dest: ~/.xinitrc
         owner: {{ username }}
         group: {{ username }}
 
