@@ -40,5 +40,5 @@
     - name: Clone Dotfiles
       ansible.builtin.git:
         repo: 'https://github.com/CuriousTea/.dotfiles'
-        dest: /home/{{ username }}/
+        dest: /home/{{ username }}/.dotfiles
 
