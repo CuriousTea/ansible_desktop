@@ -45,7 +45,7 @@
         
     - name: download yay package
       ansible.builtin.git:
-        repo: https://aur.archlinux.org/yay-git.git
+        repo: 'https://aur.archlinux.org/yay-git.git'
         dest: /opt
     
         
