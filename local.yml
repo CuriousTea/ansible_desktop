@@ -30,4 +30,17 @@
       ansible.builtin.git:
         repo: 'https://github.com/CuriousTea/.dotfiles'
         dest: /home/{{ username }}/.dotfiles
+        
+    - name: Stow a directory
+      become: yes
+      delay: 10
+      async: 10
+      poll: 60
+      shell: |
+        
+        echo -e "\n change into .dotfiles direcotry"
+        cd ~/.dotfiles
+        
+        echo -e "stow x"
+        stow x
 
