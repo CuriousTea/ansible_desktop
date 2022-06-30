@@ -56,7 +56,7 @@
 
     - name: building yay
       ansible.builtin.shell: |
-        sudo makepkg -si
+        makepkg -si
       args:
          chdir: "/opt/yay-git"
         
