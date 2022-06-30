@@ -54,7 +54,7 @@
       args:
          chdir: "/opt"
 
-    - name: ensure yay does not have root perms
+    - name: building yay
       ansible.builtin.shell: |
         sudo makepkg -si
       args:
