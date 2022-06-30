@@ -37,9 +37,9 @@
       args:
          chdir: "/home/{{ username }}/.dotfiles"
          
-    - name: change default Shell
+    - name: create a symbolic .zshrc
       ansible.builtin.shell: |
-        chsh -s /bin/zsh
+        sym link ~/.config/zsh/.zshrc ~/.zshrc 
       args:
         chdir: "/home/{{ username }}"
 
