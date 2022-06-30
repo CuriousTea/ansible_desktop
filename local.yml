@@ -32,9 +32,6 @@
         dest: /home/{{ username }}/.dotfiles
         
     - name: Stow a directory
-        delay: 10
-        async: 10
-        poll: 60
         shell: |
 
           echo -e "stow x"
