@@ -2,8 +2,9 @@
 - hosts: localhost
   connection: local
   become: true
+  vars:
+    username: teclis
 
-  username: teclis
   tasks:
     - name: install packages
       package:
