@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: archlinux
   connection: local
   become: true
 
