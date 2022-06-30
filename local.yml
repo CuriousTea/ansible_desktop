@@ -32,11 +32,11 @@
         dest: /home/{{ username }}/.dotfiles
         
     - name: Stow a directory
-        shell: |
+       shell: |
 
-          echo -e "stow x"
-          stow x
+         echo -e "stow x"
+         stow x
 
-          args:
-            chdir: "~./dotfiles"
+         args:
+           chdir: "~./dotfiles"
 
