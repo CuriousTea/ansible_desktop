@@ -55,7 +55,7 @@
          chdir: "/opt"
 
     - name: building yay
-      become_user: {{ username }}
+      become_user: "{{ username }}"
       ansible.builtin.shell: |
         makepkg -si
       args:
