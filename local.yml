@@ -22,7 +22,7 @@
           - stow
           - neofetch
           - neovim
-            #    - name: copy a file test
+         #    - name: copy a file test
             #      copy:
             #        src: files/testfile.txt
 #        dest: ~/diditwork.txt
