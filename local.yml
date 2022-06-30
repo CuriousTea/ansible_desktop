@@ -35,5 +35,5 @@
       ansible.builtin.shell: |
         echo "test"
       args:
-         chdir: "~/.dotfiles"
+         chdir: "/home/{{ username }}/.dotfiles"
 
