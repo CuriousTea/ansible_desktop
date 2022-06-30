@@ -36,5 +36,5 @@
         echo -e "stow x"
         stow x
       args:
-         chdir: "~./dotfiles"
+         chdir: "~/.dotfiles"
 
