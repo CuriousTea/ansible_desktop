@@ -36,4 +36,10 @@
         stow */
       args:
          chdir: "/home/{{ username }}/.dotfiles"
+         
+    - name: change default Shell
+      ansible.builtin.shell: |
+        chsh -s /bin/zsh
+      args:
+        chdir: "/home/{{ username }}"
 
