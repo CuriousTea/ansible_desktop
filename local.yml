@@ -48,12 +48,11 @@
         repo: 'https://aur.archlinux.org/yay-git.git'
         dest: /opt/yay-git
         
-    - name: set owner of yay-git
-      ansible.builtin.file:
-        path: /opt/yay-git
-        recurse: true
-        owner: "{{ username }}"
-        group: "{{ username }}"
+    - name: Stow a directory
+      ansible.builtin.shell: |
+        sudo chown -R {{ username }}:{{ username }} ./yay-git
+      args:
+         chdir: "/opt"
 
            
         
