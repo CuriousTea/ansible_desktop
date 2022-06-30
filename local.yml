@@ -9,6 +9,7 @@
     - name: install packages
       package:
         name: 
+          - i3-gaps
           - firefox
           - alacritty
           - ranger
