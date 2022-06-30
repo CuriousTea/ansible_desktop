@@ -52,8 +52,8 @@
       ansible.builtin.file:
         path: /opt/yay-git
         recurse: true
-        owner: {{ username }}
-        group: {{ username }}
+        owner: "{{ username }}"
+        group: "{{ username }}"
 
            
         
